@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRay", "GameRay.csproj", "{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBed", "..\TestBed\TestBed.csproj", "{F5DE1B36-F4A3-4AAE-A078-42C1305D3ABF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F} = {EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayMarchingTest", "..\RayMarchingTest\RayMarchingTest.csproj", "{60CA8E78-C103-489C-A597-6CE018CC50C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F} = {EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1D5DB0-7AE9-4D80-A0DA-AC6784E89E2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DE1B36-F4A3-4AAE-A078-42C1305D3ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DE1B36-F4A3-4AAE-A078-42C1305D3ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DE1B36-F4A3-4AAE-A078-42C1305D3ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DE1B36-F4A3-4AAE-A078-42C1305D3ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CA8E78-C103-489C-A597-6CE018CC50C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CA8E78-C103-489C-A597-6CE018CC50C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CA8E78-C103-489C-A597-6CE018CC50C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CA8E78-C103-489C-A597-6CE018CC50C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF45208B-1DAC-4939-8218-0B078D50B7A9}
+	EndGlobalSection
+EndGlobal
