@@ -4,6 +4,9 @@ using SFML.Window;
 using System;
 using System.Threading;
 using static GameRay.Utils.MathUtils;
+using GameRay.MapData;
+using GameRay.MapData.Bodies;
+using GameRay.MapData.Collision;
 
 namespace RayMarchingTest
 {
@@ -13,6 +16,7 @@ namespace RayMarchingTest
         {
             RenderWindow window = new RenderWindow(new VideoMode(1000, 800), "RayMatchingTest");
             World world = new World();
+            RayMarching rayMarching = new RayMarching(world);
             Texture texture = new Texture("Blank.bmp");
             Font font = new Font("Font.ttf");
             Text fpsLabel = new Text("", font);
@@ -100,7 +104,7 @@ namespace RayMarchingTest
                 foreach (Body body in world.Objects)
                     body.Render(window, texture);
 
-                Collision result = world.CastRay(o.Position, Atan2D(new Vector2f(mouse.X, mouse.Y), o.Position));
+                MarchingCollision result = rayMarching.CastRay(o.Position, Atan2D(new Vector2f(mouse.X, mouse.Y), o.Position));
 
                 if (result.Object != null)
                     result.Object.Color = Color.Green;
